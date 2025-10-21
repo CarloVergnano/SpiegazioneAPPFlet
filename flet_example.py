@@ -13,7 +13,7 @@ def main(page : ft.Page):
     page.update()
 
     myText.color = "blue"
-    #sleep(5)
+    sleep(5)
     myText.update()
 
     # DEFINISCO LA FUNZIONE EVENT HANDLER DEL CLICK SUL PULSANTE btnPress
@@ -27,5 +27,5 @@ def main(page : ft.Page):
     page.controls.append(btnPress)
     page.update()
 
-
-ft.app(target=main, view = ft.AppView.FLET_APP)
+#ft.AppView.DOVE_VOGLIO_VEDERLO, ci da la possibilità di vede il nostro programma non solo su PyCharm ma per esempio sul browser
+ft.app(target=main, view = ft.AppView.WEB_BROWSER)

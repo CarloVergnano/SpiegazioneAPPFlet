@@ -19,7 +19,7 @@ class Book:
 
     def __eq__(self, other):
         # ALGORITMO DI CONFRONTO, PIU' O MENO COMPLESSO
-        return self._title == other._title and self._author == other._author # ...
+        return self._title == other._title and self._author == other._author # COSI SE UN LIBRO AVRA LO STESSO TITOLO E STESSO AUTORE SARA UGUALE
 
     def __lt__(self, other):
         # ALGORITMO DI ORDINAMENTO, ES. PER ANNO CRESC., E PER PAGINE DECRESC.

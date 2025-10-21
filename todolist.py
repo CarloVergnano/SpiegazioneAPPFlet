@@ -4,13 +4,13 @@ from flet import Checkbox
 from flet import ListView
 
 def main(page : ft.Page):
-    page.window.width = 400
+    page.window.width = 1000
     page.window.height = 700
     page.title = "Todolist"
     page.update()
 
     listItems = []
-
+#TEXTFIELD CREA LA SBARRA CON SCRITTO DENTRO QUELLO e dove posso ggiungere gli elementi
     textIn = ft.TextField(label="Item to add")
 
     # CREO UN CONTENITORE DOTATO DI BARRA DI SCORRIMENTO
@@ -30,7 +30,7 @@ def main(page : ft.Page):
     #page.controls.append(btnAdd)
 
     # ORGANIZZO I MIEI CONTROLLI SU UNA RIGA
-    row1 = Row([textIn, btnAdd], alignment=ft.MainAxisAlignment.CENTER)
+    row1 = Row([textIn, btnAdd], ft.MainAxisAlignment.CENTER)
     page.controls.append(row1)
     #page.add(row1) # EQUIVALENTE A controls.append()
 
